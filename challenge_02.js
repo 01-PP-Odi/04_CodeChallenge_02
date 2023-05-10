@@ -16,14 +16,35 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
+// Else if 
 // Deklaration 1
-let name1, alter;
+let name, age, drink;
 
-name1 = prompt("Bitte geben sie Ihren Namen ein: ");
-alter = prompt("Bitte geben sie Ihr Alter ein: ");
+name = prompt("Bitte geben sie Ihren Namen ein: ");
+age = parseInt(prompt("Bitte geben sie Ihr Alter ein: "));
 
-// Deklaration 2
-let isOlderThan5 = ()
-let isOlderThan6 = ()
-let isOlderThan12 = ()
-let isOlderThan18 = ()
+if (age >= 0 == age <=5) 
+{
+    drink = "Milch";
+}
+ else if (age >= 6 == age <= 12)
+ {
+    drink = "Saft";
+  }
+   else if (age >= 13 == age <= 17)
+   {
+    drink = "Cola";
+  } 
+  else if (age >= 18)
+   {
+    drink = "Wein";
+  }
+   else
+   {
+    console.log("Ungültige Eingabe.");
+  }
+  
+  if (drink)
+   {
+    console.log(name + " trinkt " + drink + ".");
+  }
